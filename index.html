@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CareerPrep AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="img/img.png">
+
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Hero Section -->
+    <section class="section-hero">
+      <div class="content">
+        <div class="details">
+          <h1 class="title">CareerPrep AI</h1>
+          <p><b> AI assistant for CV & Interview preparation</b></p>
+          <p class="description">Are you ready to take your career to the next level? Our AI assistant helps you get your CV looking perfect and your interview skills on point. It’s like having a career coach at your fingertips, giving you personalized tips and real-time feedback on how to impress recruiters and employers.
+          <br><br>
+          <button class="scroll-btn" onclick="scrollToCards()">Get Started</button></p>
+        </div>
+        <!-- Scroll Button -->
+        
+
+        <!-- Image Wrapper -->
+        <div class="image-wrapper">
+          <img src="img/img.png" alt="Happy Character">
+        </div>
+      </div>
+    </section>
+
+    <div class="cards">
+      <div class="card">
+        <h3>CV Generator</h3>
+        <p>Create a professional CV with AI</p>
+        <a href="cv.html"><button>Start</button></a>
+      </div>
+      <div class="card">
+        <h3>Interview Coach</h3>
+        <p>Practice interviews with AI</p>
+        <a href="interview.html"><button>Start</button></a>
+      </div>
+    </div>
+  </main>
+  <script>
+    function scrollToCards() {
+      document.querySelector('.cards').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+</body>
+</html>
