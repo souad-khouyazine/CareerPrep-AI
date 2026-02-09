@@ -30,12 +30,7 @@ body {
   text-align: left;
 }
 
-.details h1 {
-  text-align: center;
-  font-size: 85px;
-  color: #3389b3;
-  margin-bottom: 10px;
-}
+
 
 .details p {
   text-align: center;
@@ -143,20 +138,25 @@ a.back-home button {
 
 }
 .animated-gradient {
-  font-size: 64px;
+  font-size: 64px; /* matches your inline style */
   font-weight: bold;
-  text-align: center;
+  text-align: left; /* keep your original */
+  
+  /* Gradient colors */
   background: linear-gradient(
     270deg,
     #1078f8,
-    #00e1e1,
-    #93e8ec,
+    #00caca,
+    #86f9ae,
     #df72ef
   );
-  background-size: 800% 800%; /* smoother movement */
+  
+  background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientMove 10s ease infinite; /* slower = more elegant */
+  
+  /* Animation */
+  animation: gradientMove 10s ease infinite;
 }
 
 @keyframes gradientMove {
